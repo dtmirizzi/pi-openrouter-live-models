@@ -4,8 +4,61 @@
   "description": "Always-fresh OpenRouter model list with an enhanced model selector for pi",
   "keywords": ["pi-package"],
   "license": "MIT",
+  "author": "dtmirizzi",
+  "homepage": "https://github.com/dtmirizzi/pi-openrouter-live-models#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtmirizzi/pi-openrouter-live-models.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dtmirizzi/pi-openrouter-live-models/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "src/index.ts",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
   "pi": {
-    "extensions": ["./src/index.ts"],
-    "image": "https://openrouter.ai/favicon.ico"
+    "extensions": ["./src/index.ts"]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "typebox": "*"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.1",
+    "@semantic-release/npm": "^12.0.1",
+    "semantic-release": "^24.0.0"
+  },
+  "release": {
+    "branches": ["main"],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": ["package.json", "CHANGELOG.md"],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ],
+      "@semantic-release/github"
+    ]
   }
 }

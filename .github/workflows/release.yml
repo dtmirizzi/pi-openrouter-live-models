@@ -1,0 +1,38 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.semantic.outputs.new_release_version }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+
+      - run: |
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > "${NPM_CONFIG_USERCONFIG}"
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - run: npm install
+
+      - id: semantic
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
