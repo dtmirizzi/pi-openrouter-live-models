@@ -2,7 +2,9 @@
   "name": "pi-openrouter-live-models",
   "version": "1.0.0",
   "description": "Always-fresh OpenRouter model list with an enhanced model selector for pi",
-  "keywords": ["pi-package"],
+  "keywords": [
+    "pi-package"
+  ],
   "license": "MIT",
   "author": "dtmirizzi",
   "homepage": "https://github.com/dtmirizzi/pi-openrouter-live-models#readme",
@@ -29,7 +31,9 @@
     "semantic-release": "semantic-release"
   },
   "pi": {
-    "extensions": ["./src/index.ts"]
+    "extensions": [
+      "./src/index.ts"
+    ]
   },
   "peerDependencies": {
     "@earendil-works/pi-ai": "*",
@@ -45,7 +49,9 @@
     "semantic-release": "^24.0.0"
   },
   "release": {
-    "branches": ["main"],
+    "branches": [
+      "main"
+    ],
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
@@ -54,7 +60,10 @@
       [
         "@semantic-release/git",
         {
-          "assets": ["package.json", "CHANGELOG.md"],
+          "assets": [
+            "package.json",
+            "CHANGELOG.md"
+          ],
           "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
         }
       ],
