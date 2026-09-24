@@ -1,5 +1,9 @@
 # pi-openrouter-live-models
 
+<p align="center">
+  <img src="assets/logo.png" width="256" height="256" alt="Logo">
+</p>
+
 Always-fresh OpenRouter model list for [pi](https://pi.dev).
 
 Every time pi starts, this extension fetches the latest models from the [OpenRouter API](https://openrouter.ai/api/v1/models) and replaces pi's static snapshot. No more stale model lists.

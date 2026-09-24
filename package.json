@@ -34,7 +34,7 @@
     "extensions": [
       "./src/index.ts"
     ],
-    "image": "https://raw.githubusercontent.com/dtmirizzi/pi-openrouter-live-models/main/assets/icon.svg"
+    "image": "https://raw.githubusercontent.com/dtmirizzi/pi-openrouter-live-models/main/assets/logo.png"
   },
   "peerDependencies": {
     "@earendil-works/pi-ai": "*",
