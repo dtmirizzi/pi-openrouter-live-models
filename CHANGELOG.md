@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/dtmirizzi/pi-openrouter-live-models/compare/v1.0.1...v1.1.0) (2026-09-24)
+
+
+### Features
+
+* add package icon ([a4b6489](https://github.com/dtmirizzi/pi-openrouter-live-models/commit/a4b64897fd7b10175ec0dd540d1ae298867e25ab))
+
 ## [1.0.1](https://github.com/dtmirizzi/pi-openrouter-live-models/compare/v1.0.0...v1.0.1) (2026-09-23)
 
 
