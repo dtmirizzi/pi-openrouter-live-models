@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/dtmirizzi/pi-openrouter-live-models/compare/v1.1.0...v1.2.0) (2026-09-24)
+
+
+### Features
+
+* AI-generated logo via Nano Banana ([0299894](https://github.com/dtmirizzi/pi-openrouter-live-models/commit/0299894c63d39fe58a97537884c37057d972d824))
+
 # [1.1.0](https://github.com/dtmirizzi/pi-openrouter-live-models/compare/v1.0.1...v1.1.0) (2026-09-24)
 
 
