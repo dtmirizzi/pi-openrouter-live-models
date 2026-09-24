@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/dtmirizzi/pi-openrouter-live-models/compare/v1.2.0...v1.2.1) (2026-09-24)
+
+
+### Bug Fixes
+
+* remove svg placeholder, use png logo ([d09557e](https://github.com/dtmirizzi/pi-openrouter-live-models/commit/d09557e34891fa34e5891b22a14336ae0c90cfba))
+
 # [1.2.0](https://github.com/dtmirizzi/pi-openrouter-live-models/compare/v1.1.0...v1.2.0) (2026-09-24)
 
 

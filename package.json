@@ -1,6 +1,6 @@
 {
   "name": "@dtmirizzi/pi-openrouter-live-models",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Always-fresh OpenRouter model list with an enhanced model selector for pi",
   "keywords": [
     "pi-package"
